@@ -1,0 +1,7 @@
+smtp_address: smtp.gmail.com
+username: xyz
+password: xyz
+first_date: 08-01-2022
+second_date: 10-01-2022
+data_to_not_search: Listing, Drop, conv, ama
+to_mail: test.gmail.com
