@@ -12,9 +12,6 @@ use ReadInitialData::read_File;
 use HtmlScrapper::HTMLRequest;
 use std::any::type_name;
 
-
-//  podzielić funkcję fetch za pomoca threadów
-
 #[tokio::main]
 async fn main() -> Result<(),Box<dyn std::error::Error>> {
 
@@ -40,6 +37,7 @@ async fn main() -> Result<(),Box<dyn std::error::Error>> {
 
     let mut search_result = String::new();
 
+    //add space to vector, because vectors are written in one line in email
     search_result = html_scrapper.mySearch.into_iter().map(|x|
         format!("{:?} \n", x)).collect();
 
