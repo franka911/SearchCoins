@@ -8,7 +8,6 @@ extern crate tokio;
 use lettre::smtp::authentication::IntoCredentials;
 use lettre::{SmtpClient, Transport};
 use lettre_email::EmailBuilder;
-use liberrors::myErrors;
 
 
 pub fn send_email(to_mail: &str, from_mail: &str,

@@ -7,7 +7,6 @@ extern crate chrono;
 
 
 
-
 use scraper::{Html, Selector};
 use futures::executor::block_on;
 
@@ -20,7 +19,7 @@ use select::document::Document;
 use select::predicate::{Class, Name, Predicate, Attr};
 use futures::{TryFutureExt, StreamExt};
 use chrono::prelude::*;
-use liberrors::myErrors;
+use LibErrors::myErrors;
 
 #[derive(Debug, Copy, Clone)]
 enum Dates{
@@ -108,6 +107,7 @@ impl HTMLRequest {
             let res = client.get(&url_address).send().await?.bytes().await?;
 
             let document = Document::from_read(res.as_ref())?;
+
 
             let mut card_counter= 16u8;
 

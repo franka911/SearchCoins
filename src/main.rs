@@ -7,6 +7,7 @@ use std::io::Read;
 mod ReadInitialData;
 mod HtmlScrapper;
 mod EmailSender;
+mod LibErrors;
 
 use ReadInitialData::read_File;
 use HtmlScrapper::HTMLRequest;

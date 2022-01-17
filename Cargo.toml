@@ -19,5 +19,7 @@ lettre_email = "0.9.2"
 
 
 [lib]
-name = "liberrors"
-path = "src/liberrors.rs"
+name = "LibErrors"
+path = "src/LibErrors.rs"
+
+
